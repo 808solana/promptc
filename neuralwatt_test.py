@@ -92,7 +92,7 @@ HTML = """
   <textarea id="prompt" placeholder="Type your prompt here..."></textarea>
   <br/>
   <div class="btn-row">
-    <button onclick="sendRequest()">Send Request →</button>
+    <button type="button" onclick="sendRequest()">Send Request →</button>
     <span class="done-indicator" id="done-indicator">&#10003;</span>
   </div>
   <div id="loading">⏳ Waiting for response...</div>
@@ -324,4 +324,4 @@ if __name__ == "__main__":
 |   Running at: http://localhost:{PORT}           |
 +{'='*42}+
     """)
-    app.run(port=PORT, debug=True)
+    app.run(port=PORT, debug=False)
